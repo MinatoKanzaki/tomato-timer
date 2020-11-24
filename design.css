@@ -1,0 +1,81 @@
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+.timer {
+  border: 1px solid black;
+  width: 800px;
+  height: 600px;
+  margin: 50px auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.time {
+  width: 800px;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 120px;
+}
+
+.panel {
+  width: 800px;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.time-setting-box input {
+  font-size: 20px;
+  width: 40px;
+  height: 30px;
+  margin-right: 50px;
+  margin-left: 5px;
+}
+
+.message-box {
+  flex-direction: column;
+}
+
+.message-box p {
+  margin: 5px;
+  font-size: 36px;
+}
+
+.panel button {
+  margin: 50px;
+  width: 100px;
+  height: 50px;
+  color: white;
+  font-size: 25px;
+  border: none;
+  border-radius: 5px;
+  transition: opacity 0.5s, color 0.5s;
+  cursor: pointer;
+}
+
+.panel button:hover {
+  opacity: 0.8;
+  color: black;
+}
+
+.start-button {
+  background-color: #44bd32;
+}
+
+.stop-button {
+  background-color: #e84118;
+}
+
+.reset-button {
+  background-color: #718093;
+}
+
+#adjustment {
+  width: 180px;
+  background-color: #8c7ae6;
+}

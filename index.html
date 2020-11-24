@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>tomato timer</title>
+    <link rel="stylesheet" href="design.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="#">
+    <script src="script.js" async></script>
+  </head>
+  <body>
+    <audio id="sound">
+      <source src="sound.mp3" type="audio/mpeg">
+    </audio>
+    <section class="timer">
+      <section class="time">
+        <p id="time">25:00</p>
+      </section>
+      <section class="panel">
+        <button type="button" class="start-button" id="start">start</button>
+        <button type="button" class="stop-button" id="stop">stop</button>
+        <button type="button" class="reset-button" id="reset">reset</button>
+      </section>
+      <section class="panel">
+        <button type="button" class="adjustment-button" id="adjustment">add 1 minute</button>
+      </section>
+      <section class="panel time-setting-box">
+        <label for="workTime">pomodoro:</label>
+        <input type="number" name="" value="25" min="1" max="99" id="workTime">
+        <label for="shortBreakTime">short break:</label>
+        <input type="number" name="" value="5" min="1" max="99" id="shortBreakTime">
+        <label for="longBreakTime">long break:</label>
+        <input type="number" name="" value="15" min="1" max="99" id="longBreakTime">
+      </section>
+      <section class="panel message-box">
+        <p id="statusBox">status: not start</p>
+        <p id="durationBox">duration: not start</p>
+      </section>
+    </section>
+  </body>
+</html>
